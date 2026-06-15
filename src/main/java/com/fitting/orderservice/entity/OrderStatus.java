@@ -1,4 +1,9 @@
-package com.fitting.orderservice.dto;
+package com.fitting.orderservice.entity;
 
-public class OrderStatus {
+public enum OrderStatus {
+    PENDING,      // recién creada, stock reservado
+    CONFIRMED,    // pago confirmado
+    SHIPPED,      // en camino
+    DELIVERED,    // entregada
+    CANCELLED     // cancelada, stock liberado
 }
